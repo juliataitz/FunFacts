@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A396110A19F7652C00616349 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396110919F7652B00616349 /* ColorWheel.swift */; };
 		A3C1469519EE14EA001C5462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1469419EE14EA001C5462 /* AppDelegate.swift */; };
 		A3C1469719EE14EA001C5462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1469619EE14EA001C5462 /* ViewController.swift */; };
 		A3C1469A19EE14EA001C5462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C1469819EE14EA001C5462 /* Main.storyboard */; };
 		A3C1469C19EE14EA001C5462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C1469B19EE14EA001C5462 /* Images.xcassets */; };
 		A3C1469F19EE14EA001C5462 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C1469D19EE14EA001C5462 /* LaunchScreen.xib */; };
 		A3C146AB19EE14EA001C5462 /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C146AA19EE14EA001C5462 /* FunFactsTests.swift */; };
+		A3C146B519EE2128001C5462 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C146B419EE2128001C5462 /* FactBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A396110919F7652B00616349 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		A3C1468F19EE14EA001C5462 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C1469319EE14EA001C5462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3C1469419EE14EA001C5462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		A3C146A419EE14EA001C5462 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C146A919EE14EA001C5462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3C146AA19EE14EA001C5462 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
+		A3C146B419EE2128001C5462 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				A3C1469419EE14EA001C5462 /* AppDelegate.swift */,
+				A3C146B419EE2128001C5462 /* FactBook.swift */,
 				A3C1469619EE14EA001C5462 /* ViewController.swift */,
 				A3C1469819EE14EA001C5462 /* Main.storyboard */,
 				A3C1469B19EE14EA001C5462 /* Images.xcassets */,
 				A3C1469D19EE14EA001C5462 /* LaunchScreen.xib */,
 				A3C1469219EE14EA001C5462 /* Supporting Files */,
+				A396110919F7652B00616349 /* ColorWheel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C146B519EE2128001C5462 /* FactBook.swift in Sources */,
 				A3C1469719EE14EA001C5462 /* ViewController.swift in Sources */,
 				A3C1469519EE14EA001C5462 /* AppDelegate.swift in Sources */,
+				A396110A19F7652C00616349 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +415,7 @@
 				A3C146B019EE14EA001C5462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3C146B119EE14EA001C5462 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +424,7 @@
 				A3C146B319EE14EA001C5462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
